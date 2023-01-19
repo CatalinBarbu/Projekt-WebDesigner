@@ -5,23 +5,27 @@
 }
 /* ==== Global styles ==== */
 * {
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   box-sizing: border-box;
 }
 body {
-  width: 100%;
+  /* width: 100%; */
   max-width: 1440px;
   margin: 0 auto;
   font-family: "Roboto";
 }
 /* ==== Header ==== */
-
+header {
+  background-image: url("../img/ilustracion1.png");
+  background-position: right top;
+  background-size: 50%;
+  background-repeat: no-repeat;
+}
 .flexDiv {
   display: flex;
-}
-.logo {
-  padding-top: 5vh;
+  width: max-content;
+  margin: 5% 0 0 0;
 }
 .logo div img {
   width: 100%;
@@ -29,19 +33,15 @@ body {
 }
 .beschreibungHeader img {
   width: 100%;
-  max-width: 800px;
+  max-width: 600px;
 }
 .beschreibungHeader {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding-left: 3vw;
-  position: relative;
+  padding-left: 5vw;
 }
 .beschreibungHeader p:first-of-type {
   padding-top: 20px;
   margin-bottom: 20vh;
-  font-size: 1.3rem;
+  font-size: 1.5rem;
 }
 .beschreibungHeader p:last-of-type {
   margin-bottom: 15vh;
@@ -52,11 +52,7 @@ body {
   margin-top: 30vh;
   font-size: 4.5rem;
 }
-.beschreibungHeader article img {
-  position: absolute;
-  top: -78px;
-  left: 640px;
-}
+
 .imgBottomHeader img {
   width: 100%;
   max-width: 1440px;
@@ -139,7 +135,6 @@ body {
   opacity: 0.2;
   padding-bottom: 5vh;
 }
-
 /* ==== Footer ==== */
 .textAlignCenterFooter {
   text-align: center;
@@ -153,7 +148,7 @@ body {
   padding-bottom: 10vh;
 }
 .blockElement input {
-  padding: 25px 250px;
+  padding: 25px 100px;
   border: #e2e1f1;
   box-shadow: 0 0 25px 25px #e2e1f1;
   border-radius: 5px;
@@ -166,10 +161,13 @@ body {
   border: #ff3571;
   border-radius: 3px;
   margin-bottom: 15vh;
+  cursor: pointer;
 }
 .displayBlock {
   display: flex;
-  align-items: baseline;
+  width: max-content;
+  align-items: flex-end;
+  margin-bottom: 3vh;
 }
 .displayBlock span a {
   text-decoration: none;
@@ -184,3 +182,30 @@ body {
 .displayBlock p {
   padding-right: 15px;
 }
+.forJavaScript h4 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+.forJavaScript {
+  width: max-content;
+  margin: 15vh auto;
+  text-align: center;
+  border: 1px solid #a49fff;
+  box-shadow: 0 0 25px 1px #3c30ff;
+  padding: 50px 100px;
+  border-radius: 5px;
+}
+.buttonZurück {
+  padding: 15px 100px;
+  background-color: #3c30ff;
+  color: white;
+  border: #ff3571;
+  border-radius: 3px;
+  margin-top: 30px;
+  cursor: pointer;
+}
+/* ======= Start Class - For JS ===== */
+.buttonNone {
+  display: none;
+}
+/* ======= End Class - For JS ===== */

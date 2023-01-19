@@ -10,7 +10,7 @@
   <body>
     <header>
       <section>
-        <section class="logo">
+        <section class="logo" id="startSeite">
           <article class="flexDiv">
             <div>
               <img src="./assets/img/logo.svg" alt="" />
@@ -29,10 +29,6 @@
               in your daily life. 🚀
             </p>
             <p>SCOLL TO SEE MORE －</p>
-          </article>
-          <article>
-            <img src="./assets/img/ilustracion1.png" alt="" />
-            <img src="./assets/img/ilustracion_people.png" alt="" />
           </article>
         </section>
       </section>
@@ -208,12 +204,19 @@
         <article>
           <form class="blockElement">
             <input type="email" name="email" id="email" placeholder="Write Your email here" />
-            
           </form>
-          <form class="buttonSubmite">
-            <input type="button" value="Subscribe" />
+          <form class="buttonSubmite" onsubmit="return false">
+            <input type="submit" value="Subscribe">
         </form>
         </article>
+    </section>
+    </section>
+        <section class="forJavaScript buttonNone">
+            <h4>YOUR EMAIL HAS BEEN CONFIRMED.</h4>
+            <h4>THANKS FOR SUBSCRIBING!</h4>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus, sunt.</p>
+            <input class="buttonZurück" type="submit" value="Back to Home">
+        </section>
       </section>
       <article class="displayBlock">
         <p>Ceated with Love by <span><a href="https://github.com/CatalinBarbu">Catalin Barbu</a></span></p>
